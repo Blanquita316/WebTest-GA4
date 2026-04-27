@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRKKV57T1L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZRKKV57T1L');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>猪咪之家🐱</title>
@@ -81,12 +90,17 @@
     	<img src="cat12.jpg" alt="猫咪照片12">
     </div>
 
-    <!-- 猫咪视频区域 【这里替换你的视频】 -->
     <h2 class="video-title">🎬 猪咪日常视频</h2>
-    <video controls autoplay muted loop>
-        <source src="catvideo1.mp4" type="video/mp4">
-        你的浏览器不支持播放视频
-    </video>
+	<video 
+ 	 controls 
+ 	 autoplay 
+ 	 muted 
+	  loop
+	  onplay="gtag('event','play',{'event_category':'video','event_label':'cat_video'})"
+	>
+  	  <source src="catvideo1.mp4" type="video/mp4">
+	    你的浏览器不支持播放视频
+	</video>
 
     <footer>❤️ 小猪咪永远健康快乐 猪咪妈妈万事顺意 ❤️</footer>
 </body>
